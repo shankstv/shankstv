@@ -8,6 +8,14 @@
 
 ---
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shankstv/shankstv/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shankstv/shankstv/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/shankstv/shankstv/output/pacman-contribution-graph.svg">
+</picture>
+
+---
+
 ## 🌌 A Long Time Ago in a Galaxy Far, Far Away...
 
 markdown
@@ -18,6 +26,7 @@ markdown
 
 
 ---
+
 
 ## 🚀 Technologies & Tools
 
