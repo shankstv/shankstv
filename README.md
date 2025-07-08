@@ -21,10 +21,9 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shankstv/shankstv/output/latest-contribution.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shankstv/shankstv/output/latest-contribution.svg">
-  <img alt="contribution graph" src="https://raw.githubusercontent.com/shankstv/shankstv/output/latest-contribution.svg.svg">
+  <img alt="contribution graph" src="https://raw.githubusercontent.com/shankstv/shankstv/output/latest-contribution.svg">
 </picture>
 
----
 
 ## 🌌 A Long Time Ago in a Galaxy Far, Far Away...
 
