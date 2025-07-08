@@ -6,12 +6,22 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Old+English+Text+MT&size=30&duration=5000&color=FFE81F&center=true&vCenter=true&multiline=true&width=800&height=120&lines=Welcome+to+my+Star+Wars-themed+Profile!;This+is+where+the+coding+force+is+strong!" />
 </p>
 
+<!-- ---
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shankstv/shankstv/output/snk-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shankstv/shankstv/output/snk-contribution-graph.svg">
+  <img alt="snk contribution graph" src="https://raw.githubusercontent.com/shankstv/shankstv/output/snk-contribution-graph.svg">
+</picture>
+
+--- -->
+
 ---
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shankstv/shankstv/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shankstv/shankstv/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/shankstv/shankstv/output/pacman-contribution-graph.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shankstv/shankstv/output/latest-contribution.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shankstv/shankstv/output/latest-contribution.svg">
+  <img alt="contribution graph" src="https://raw.githubusercontent.com/shankstv/shankstv/output/latest-contribution.svg.svg">
 </picture>
 
 ---
