@@ -1,8 +1,12 @@
-name: Generate Snake Animation
+name: Generate snake animation
 
 on:
-  workflow_call:
+  schedule:
+    - cron: "0 */8 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   generate:
@@ -12,34 +16,21 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      - name: Checkout output branch
-        uses: actions/checkout@v3
-        with:
-          ref: output
-          path: output  # Checkout to output/ subdirectory
+      - name: Create dist folder
+        run: mkdir -p dist
 
-      - name: Generate Snake
-        uses: Platane/snk/svg-only@v3
+      - name: Generate snake.svg
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          outputs: output/latest-contribution.svg?palette=github-dark&snake=#ADD8E6&background=#000080
+          outputs: |
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
 
-      - name: Verify SVG was generated
-        run: |
-          if [ ! -f "output/latest-contribution.svg" ]; then
-            echo "Error: SVG file was not generated!"
-            exit 1
-          fi
-          if ! grep -q '<svg' output/latest-contribution.svg; then
-            echo "Error: Invalid SVG content!"
-            exit 1
-          fi
-
-      - name: Commit and push changes
-        run: |
-          cd output
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add latest-contribution.svg
-          git diff --cached --quiet || git commit -m "Update Snake animation [skip ci]"
-          git push
+      - name: Push snake animation to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

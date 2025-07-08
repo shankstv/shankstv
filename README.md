@@ -3,6 +3,7 @@
 
 <!-- Typing SVG with cool font -->
 <p align="center">
+
   <img src="https://readme-typing-svg.herokuapp.com?font=Old+English+Text+MT&size=30&duration=5000&color=FFE81F&center=true&vCenter=true&multiline=true&width=800&height=120&lines=Welcome+to+my+Star+Wars-themed+Profile!;This+is+where+the+coding+force+is+strong!" />
 </p>
 
@@ -19,11 +20,13 @@
 ---
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shankstv/shankstv/output/latest-contribution.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shankstv/shankstv/output/latest-contribution.svg">
-  <img alt="contribution graph" src="https://raw.githubusercontent.com/shankstv/shankstv/output/latest-contribution.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shankstv/shankstv/output/snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shankstv/shankstv/output/snake.svg">
+  <img alt="snake animation" src="https://raw.githubusercontent.com/shankstv/shankstv/output/snake.svg">
 </picture>
 
+
+---
 
 ## 🌌 A Long Time Ago in a Galaxy Far, Far Away...
 
