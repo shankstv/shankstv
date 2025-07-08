@@ -1,13 +1,13 @@
+# .github/workflows/scheduler.yml (or any name you like)
 name: Animated Contribution Scheduler
 
 on:
   schedule:
-    - cron: "0 0,12 * * *"  # Still runs at 12 AM and 12 PM UTC
+    - cron: "0 */8 * * *"
   workflow_dispatch:
 
 jobs:
   trigger-snake:
-    if: github.event.schedule == '0 0 * * *' || github.event_name == 'workflow_dispatch'  # Changed to 12 AM (midnight)
     uses: ./.github/workflows/snake.yml
     permissions:
       contents: write
